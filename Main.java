@@ -3,16 +3,16 @@ public class Main {
   public static String formGradeString(int[] array){
     String letterGrade = "";
     for(int num : array){
-      if(array[num] >= 90){
+      if(num >= 90){
         letterGrade += "A";
       }
-      else if(array[num] >= 80){
+      else if(num >= 80){
         letterGrade += "B";
       }
-      else if(array[num] >= 70){
+      else if(num >= 70){
         letterGrade += "C";
       }
-      else if(array[num] >= 60){
+      else if(num >= 60){
         letterGrade += "D";
       }
       else{
@@ -39,7 +39,7 @@ public class Main {
   }
   
   public static void main(String[] args) {
-    
+    System.out.println(formGradeString(new int [] {87,93,65,72,55}));
     
   }
 }
